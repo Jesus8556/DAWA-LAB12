@@ -1,0 +1,47 @@
+/* user-details.component.css */
+/* Card Styles */
+.card {
+  width: 400px; /* Adjust the width as needed */
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #3498db; /* Blue header background */
+  color: #ecf0f1; /* Light text color */
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* User Details Styles */
+.user-details {
+  font-size: 18px;
+  color: #2c3e50; /* Dark text color */
+}
+
+.user-details p {
+  margin-bottom: 10px;
+}
+
+/* Back Button Styles */
+.btn-back {
+  margin-top: 20px;
+  background-color: #3498db; /* Blue button background */
+  color: #ecf0f1; /* Light text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-back:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}

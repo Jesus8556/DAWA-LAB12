@@ -1,0 +1,21 @@
+<!-- post-details.component.html -->
+<div class="container mt-5">
+  <div *ngIf="post" class="text-center">
+    <h2 class="h4">{{ post.title }}</h2>
+    <div class="card mt-3">
+      <img [src]="post.imageUrl" class="card-img-top img-fluid" alt="Post Image">
+      <div class="card-body">
+        <p class="card-text">{{ post.content }}</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Date:</strong> {{ post.date }}</li>
+          <li class="list-group-item"><strong>Author:</strong> {{ post.author }}</li>
+          <li class="list-group-item"><strong>Category:</strong> {{ post.category }}</li>
+          <li class="list-group-item"><strong>Tags:</strong> {{ post.tags.join(', ') }}</li>
+        </ul>
+        <div class="text-center mt-3">
+          <button class="btn btn-sm btn-primary" (click)="goBack()">Back to Posts</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

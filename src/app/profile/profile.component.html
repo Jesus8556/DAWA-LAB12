@@ -1,0 +1,50 @@
+<!-- src/app/profile/profile.component.html -->
+<div *ngIf="authenticated" class="profile-container mt-4">
+  <div class="profile-header">
+    <img src="https://technocio.com/wp-content/uploads/2022/11/Nearsure_Programador.jpg" alt="Profile Image" class="profile-img">
+    <h2 class="profile-name mt-3">Alfredo Mescco </h2>
+  </div>
+  <hr class="profile-hr">
+  <div class="profile-details">
+    <h3 class="profile-subheading">Detalles del Usuario</h3>
+    <ul class="profile-list">
+      <li class="profile-item">
+        <strong>Nombre:</strong> Mescco Quispe Rosendo Alfredo
+      </li>
+      <li class="profile-item">
+        <strong>Email:</strong> rosendo.mescco@tecsup.edu.pe
+      </li>
+      <li class="profile-item">
+        <strong>Fecha de Nacimiento:</strong> 12/01/2004
+      </li>
+      <li class="profile-item">
+        <strong>Teléfono:</strong> +51 910 132 978
+      </li>
+      <li class="profile-item">
+        <strong>Dirección:</strong> Cerro Colorado-Las flores
+      </li>
+      <li class="profile-item">
+        <strong>Género:</strong> Masculino
+      </li>
+      <li class="profile-item">
+        <strong>Estado Civil:</strong> Soltero
+      </li>
+    </ul>
+  </div>
+  <div class="activity-container">
+    <h3 class="profile-subheading mt-4">Registro de Actividades</h3>
+    <ul class="profile-list">
+      <li class="profile-item">
+        <strong>Última conexión:</strong> 15/01/2024 09:45
+      </li>
+      <li class="profile-item">
+        <strong>Actividad Reciente:</strong> Has compartido un enlace en el Foro #12
+      </li>
+      <li class="profile-item">
+        <strong>Logros:</strong> Colaborador Destacado, Miembro Activo
+      </li>
+    </ul>
+  </div>
+
+  <button class="profile-btn mt-4" (click)="logout()">Logout</button>
+</div>

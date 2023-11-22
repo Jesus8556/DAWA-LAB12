@@ -1,0 +1,25 @@
+<!-- app.component.html -->
+
+<div>
+  <!-- Navbar 1 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup1" aria-controls="navbarNavAltMarkup1" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup1">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="/users">Usuarios <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="/posts">Posts</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido del primer router-outlet -->
+  <div class="container mt-4">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<div class="mt-4">
+
